@@ -1,0 +1,81 @@
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background-color: #d9e3f2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.boas-vindas button {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1f5fa9;
+    color: white;
+    cursor: pointer;
+}
+
+.boas-vindas button:hover {
+    background-color: #174a82;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.processado {
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+}
+
+.cards {
+    display: flex;
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+}
+
+.mensagem {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1f5fa9;
+    color: white;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaf0f8;
+}
