@@ -1,81 +1,129 @@
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#eaf1fb;
 }
 
-.dashboard {
-    display: grid;
+.container{
+    width:95%;
+    margin:20px auto;
+    display:grid;
     grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    padding: 20px;
+    grid-gap:20px;
 }
 
-section {
-    background-color: #d9e3f2;
-    padding: 20px;
-    border-radius: 10px;
+.card{
+    background:#dce7f7;
+    padding: 15px;
+    border-radius:15px;
 }
 
-.boas-vindas button {
-    display: block;
-    width: 100%;
-    margin: 8px 0;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    background-color: #1f5fa9;
-    color: white;
-    cursor: pointer;
+.card h3{
+    margin-top:5;
+    color:#1f3f77;
 }
 
-.boas-vindas button:hover {
-    background-color: #174a82;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-}
-
-th, td {
-    padding: 8px;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-}
-
-.processado {
-    background-color: green;
-    color: white;
-    border-radius: 10px;
-}
-
-.cards {
-    display: flex;
+.flex{
+    display:flex;
     gap: 15px;
 }
 
-.card {
-    background-color: white;
-    padding: 15px;
-    border-radius: 8px;
-    flex: 1;
-    text-align: center;
+.btn{
+    display:block;
+    background:#1f4fa3;
+    color:white;
+    padding:10px;
+    border-radius:20px;
+    text-align:center;
+    margin-bottom:10px;
+    cursor:pointer;
+    font-size:14px;
 }
 
-.mensagem {
-    background-color: white;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 8px;
+.btn.light{
+    background:#3a6fd8;
 }
 
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #1f5fa9;
-    color: white;
+
+.list-item{
+    display:flex;
+    justify-content:space-between;
+    background:white;
+    padding:10px;
+    border-radius:10px;
+    margin-bottom:8px;
+    font-size:13px;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #eaf0f8;
+.status{
+    padding:3px 10px;
+    border-radius:15px;
+    font-size:12px;
+    color:white;
+}
+
+.green{ background:#2ecc71;}
+.orange{ background:#f1c40f; color:black;}
+.red{ background:#e74c3c;}
+
+.products{
+    display:flex;
+    gap:15px;
+    overflow-x:auto;
+}
+
+.product{
+    background:white;
+    padding:10px;
+    border-radius:10px;
+    text-align:center;
+    min-width:120px;
+}
+
+.product img{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+}
+
+.progress{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.circle{
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    background:#1f4fa3;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:12px;
+}
+
+.line{
+    flex:1;
+    height:4px;
+    background:#1f4fa3;
+}
+
+.message{
+    display:flex;
+    gap:10px;
+    background:white;
+    padding:10px;
+    border-radius:10px;
+    margin-bottom:10px;
+    font-size:13px;
+}
+
+.message img{
+    width:35px;
+    height:35px;
+    border-radius:50%;
 }

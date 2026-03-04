@@ -2,78 +2,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Tela2</title>
 </head>
 <body>
-   <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Painel SAP</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <div class="container">
 
-<header>
-    <h1>Painel Corporativo</h1>
-</header>
+    <!-- ESQUERDA SUPERIOR -->
+    <div class="card">
+        <div class="flex">
+            <div>
+                <img src="assets/istockphoto-1260396908-612x612.jpg">
+                <h2>Olá, tudo bem?</h2>
+                <p>Como posso ajudar hoje?</p>
+            </div>
 
-<main class="dashboard">
-
-    <!-- BLOCO PRINCIPAL ESQUERDA -->
-    <section class="boas-vindas">
-        <div class="texto">
-            <h2>Olá, tudo bem?</h2>
-            <p>Como posso ajudar hoje?</p>
-            <button>Quero comprar material</button>
-            <button>Quero comprar serviço</button>
-            <button>Consultar fluxo de processos</button>
-            <button>Status das minhas requisições</button>
+            <div style="flex:1">
+                <div class="btn">QUERO COMPRAR MATERIAL</div>
+                <div class="btn light">QUERO COMPRAR SERVIÇO</div>
+                <div class="btn">CONSULTAR FLUXO DE PROCESSOS</div>
+                <div class="btn light">STATUS DAS MINHAS REQUISIÇÕES</div>
+                <div class="btn">NÃO SEI AO CERTO, ME AJUDE</div>
+            </div>
         </div>
-    </section>
+    </div>
 
-    <!-- STATUS PEDIDOS -->
-    <section class="status-pedidos">
+    <div class="card">
         <h3>Status de pedidos recentes</h3>
-        <table>
-            <tr>
-                <th>Nº Req</th>
-                <th>Data</th>
-                <th>Valor</th>
-                <th>Status</th>
-            </tr>
-            <tr>
-                <td>#125</td>
-                <td>20/04/2020</td>
-                <td>R$ 1.250,50</td>
-                <td class="processado">Processado</td>
-            </tr>
-        </table>
-    </section>
 
-    <!-- PRODUTOS -->
-    <section class="produtos">
-        <h3>Baseado em suas últimas compras</h3>
-        <div class="cards">
-            <div class="card">Produto 1</div>
-            <div class="card">Produto 2</div>
-            <div class="card">Produto 3</div>
-            <div class="card">Produto 4</div>
+        <div class="list-item">
+            <span>#125 - R$ 1.250,50</span>
+            <span class="status green">Processado</span>
         </div>
-    </section>
+
+        <div class="list-item">
+            <span>#125 - R$ 1.250,50</span>
+            <span class="status orange">Análise</span>
+        </div>
+
+        <div class="list-item">
+            <span>#125 - R$ 1.250,50</span>
+            <span class="status red">Recusado</span>
+        </div>
+
+    </div>
+
+    <!-- BASEADO NAS COMPRAS -->
+    <div class="card">
+        <h3>Baseado em suas últimas compras</h3>
+        <div class="products">
+            <div class="product">
+                <img src="assets/papel_sulfite_report_premium_a4_75g_500_folhas_1683_1_c7d11877b3e550f39cac84ae2fb055f5.webp">
+                <p>Papel Sulfite</p>
+            </div>
+
+            <div class="product">
+                <img src="assets/Logo-SAP.jpg">
+                <p>SAP</p>
+            </div>
+
+            <div class="product">
+                <img src="assets/download.jpg">
+                <p>Grampeador</p>
+            </div>
+
+            <div class="product">
+                <img src="assets/eses-0013-1-1-h2lnzzpudy.webp">
+                <p>Caneta Azul</p>
+            </div>
+        </div>
+    </div>
 
     <!-- MENSAGENS -->
-    <section class="mensagens">
+    <div class="card">
         <h3>Mensagens e alertas</h3>
-        <div class="mensagem">João - Pedido aprovado</div>
-        <div class="mensagem">Maria - Nova entrega</div>
-    </section>
 
-</main>
+        <div class="message">
+            <img src="assets/jovem-bonito-vestindo-camiseta-casual-sobre-o-rosto-feliz-de-fundo-azul-sorrindo-com-os-bracos-cruzados-olhando-para-a-camera-pessoa-positiva_839833-12963.avif">
+            <div>
+                <strong>João da Silva</strong><br>
+                Verificar pagamento do fornecedor
+            </div>
+        </div>
 
-<footer>
-    <p>© 2026 SAP Clone Acadêmico</p>
-</footer>
+        <div class="message">
+            <img src="assets/retrato-de-homem-branco-isolado_53876-40306.avif">
+            <div>
+                <strong>Márcio José</strong><br>
+                Nova entrega disponível
+            </div>
+        </div>
+
+    </div>
+
+    <!-- STATUS REQUISIÇÕES -->
+    <div class="card">
+        <h3>Status das últimas requisições</h3>
+
+        <div class="progress">
+            <div class="circle">1</div>
+            <div class="line"></div>
+            <div class="circle">2</div>
+            <div class="line"></div>
+            <div class="circle">3</div>
+            <div class="line"></div>
+            <div class="circle">4</div>
+        </div>
+
+        <div class="progress">
+            <div class="circle">1</div>
+            <div class="line"></div>
+            <div class="circle">2</div>
+            <div class="line"></div>
+            <div class="circle">3</div>
+            <div class="line"></div>
+            <div class="circle">4</div>
+        </div>
+
+    </div>
+
+    <!-- ÚLTIMAS TRANSAÇÕES -->
+    <div class="card">
+        <h3>Últimas transações e pedidos</h3>
+        <div class="products">
+            <div class="product">
+                <img src="assets/papel_sulfite_report_premium_a4_75g_500_folhas_1683_1_c7d11877b3e550f39cac84ae2fb055f5.webp">
+                <p>Papel</p>
+            </div>
+
+            <div class="product">
+                <img src="assets/Logo-SAP.jpg">
+                <p>SAP</p>
+            </div>
+
+            <div class="product">
+                <img src="assets/download.jpg">
+                <p>Grampeador</p>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>
+</head>
